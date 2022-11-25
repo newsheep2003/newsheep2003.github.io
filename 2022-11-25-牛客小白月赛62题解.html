@@ -6,18 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Tag: 经验 | newsheep</title>
+  <title>牛客小白月赛62题解 | newsheep</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="newsheep">
-<meta property="og:type" content="website">
-<meta property="og:title" content="newsheep">
-<meta property="og:url" content="http://example.com/tags/%E7%BB%8F%E9%AA%8C/index.html">
+  <meta name="description" content="一言难尽，$BC$ 数学题？不会。$DE$ 树论，可做，但是写复杂了，没de出来，甚至复杂度炸了一个。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="牛客小白月赛62题解">
+<meta property="og:url" content="http://example.com/2022-11-25-%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B62%E9%A2%98%E8%A7%A3.html">
 <meta property="og:site_name" content="newsheep">
-<meta property="og:description" content="newsheep">
+<meta property="og:description" content="一言难尽，$BC$ 数学题？不会。$DE$ 树论，可做，但是写复杂了，没de出来，甚至复杂度炸了一个。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-11-25T13:55:25.000Z">
+<meta property="article:modified_time" content="2022-11-25T15:10:55.617Z">
 <meta property="article:author" content="newsheep">
+<meta property="article:tag" content="题解">
+<meta property="article:tag" content="ACM">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="newsheep" type="application/atom+xml">
@@ -210,192 +214,278 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-牛客小白月赛62题解" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019-12-21-%E5%BC%82%E6%88%96.html" class="archive-article-date">
-        <time datetime="2019-12-21T07:45:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-21</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019-12-21-%E5%BC%82%E6%88%96.html" target="_blank">异或是个神奇的运算</a>
   
+    <h1 class="article-title" itemprop="name">
+      牛客小白月赛62题解
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2022-11-25-%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B62%E9%A2%98%E8%A7%A3.html" class="archive-article-date">
+        <time datetime="2022-11-25T13:55:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-11-25</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">714字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">3分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>一言难尽，$BC$ 数学题？不会。$DE$ 树论，可做，但是写复杂了，没de出来，甚至复杂度炸了一个。</p>
+<span id="more"></span>
+
+<h2 id="A-幼稚园的树"><a href="#A-幼稚园的树" class="headerlink" title="A-幼稚园的树"></a><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/47266/A">A-幼稚园的树</a></h2><p>应该有更优的解，不会。</p>
+<p>模拟可过，直接签。</p>
+<p>复杂度 $O(n \cdot m)$。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> h[MAXN];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	cin &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) cin &gt;&gt; h[i];</span><br><span class="line">	<span class="type">int</span> a, k, b, m;</span><br><span class="line">	cin &gt;&gt; a &gt;&gt; k &gt;&gt; b &gt;&gt; m;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> tmp = m<span class="number">-1</span>;</span><br><span class="line">		<span class="keyword">while</span> (tmp--)</span><br><span class="line">		&#123;</span><br><span class="line">			h[i] += a;</span><br><span class="line">			<span class="keyword">if</span> (h[i] &gt; k) h[i] = b;</span><br><span class="line">		&#125;</span><br><span class="line">		cout &lt;&lt; h[i] &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="B-剩下的数"><a href="#B-剩下的数" class="headerlink" title="B-剩下的数"></a><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/47266/B">B-剩下的数</a></h2><p>不会，改天补。</p>
+<h2 id="C-数组划分"><a href="#C-数组划分" class="headerlink" title="C-数组划分"></a><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/47266/C">C-数组划分</a></h2><p>不会，改天补。</p>
+<h2 id="D-子树的大小"><a href="#D-子树的大小" class="headerlink" title="D-子树的大小"></a><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/47266/D">D-子树的大小</a></h2><p>“编号从 $0$ 开始”，不认真读题浪费了半小时。以及 LL 没开全，爆了几次。</p>
+<p>从结点 $q$ 开始向下走，直到下一层出现叶子结点，即结点不完全。</p>
+<p>分两部分处理。</p>
+<p>对于以 $q$ 为根节点的子树的最后一层，找到其最左边结点的编号 $l$，以及最右边结点的编号 $r$，易得结点数量为 $r-l+1$。</p>
+<p>对于其他层数，结点数量按照 ${1,k,k^2,…}$  	递增。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">LL n, k, m;</span><br><span class="line"><span class="function">LL <span class="title">calc</span><span class="params">(LL q)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (k == <span class="number">1</span>) <span class="keyword">return</span> n-q;</span><br><span class="line">	LL ans = <span class="number">0</span>, l = q, r = q;</span><br><span class="line">	<span class="keyword">while</span> (l &lt; n)</span><br><span class="line">	&#123;</span><br><span class="line">		ans += <span class="built_in">min</span>(r, n<span class="number">-1</span>)-l+<span class="number">1</span>;</span><br><span class="line">		l = l*k+<span class="number">1</span>;</span><br><span class="line">		r = r*k+k;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	cin &gt;&gt; n &gt;&gt; k &gt;&gt; m;</span><br><span class="line">	<span class="keyword">while</span> (m--)</span><br><span class="line">	&#123;</span><br><span class="line">		LL q;</span><br><span class="line">		cin &gt;&gt; q;</span><br><span class="line">		cout &lt;&lt; <span class="built_in">calc</span>(q) &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="E-剖分"><a href="#E-剖分" class="headerlink" title="E-剖分"></a><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/47266/E">E-剖分</a></h2><p>初看想写树剖和线段树，然后看了眼比赛 rating 范围，又看了眼数据范围，剖个 der。</p>
+<p>考虑线段树的懒标记思维，存储两个信息，某子树根节点的权重变化，根节点到某点的权重变化。</p>
+<p>对于第一种信息，用 $tag1[x]$ 存储点 $x$ 及其子树内的权值变化（修改次数）；</p>
+<p>对于第二种信息，用 $tag2[x]$ 存储路径终点的权值变化（修改次数）。</p>
+<p>考虑子树内或路径内操作，只需 $tag[x]$++</p>
+<p>考虑子树外或路径外操作，转换成对整颗树处理 $tag[1]$++ ，再扣去对应子树或路径 $tag[x]$–。</p>
+<p>最后将 $tag1$，$tag2$ 中的信息传递并统计即可。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> tag1[MAXN], tag2[MAXN], cnt[MAXM];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> n, m;</span><br><span class="line">	cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= m; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> op, x;</span><br><span class="line">		cin &gt;&gt; op &gt;&gt; x;</span><br><span class="line">		<span class="keyword">if</span> (op == <span class="number">1</span>) tag1[x]++;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (op == <span class="number">2</span>) tag1[<span class="number">1</span>]++, tag1[x]--;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (op == <span class="number">3</span>) tag2[x]++;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (op == <span class="number">4</span>) tag2[x]--, tag1[<span class="number">1</span>]++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) tag1[i] += tag1[i&gt;&gt;<span class="number">1</span>];</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = n; i &gt;= <span class="number">1</span>; --i) tag2[i&gt;&gt;<span class="number">1</span>] += tag2[i];</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) cnt[tag1[i]+tag2[i]]++;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= m; ++i) cout &lt;&lt; cnt[i] &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="F-子串的子序列"><a href="#F-子串的子序列" class="headerlink" title="F-子串的子序列"></a><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/47266/F">F-子串的子序列</a></h2><p>不会，改天补。</p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          newsheep
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://example.com/2022-11-25-牛客小白月赛62题解.html" title="牛客小白月赛62题解" target="_blank">http://example.com/2022-11-25-牛客小白月赛62题解.html</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">经验</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">题解</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">OI</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ACM</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+    
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        			<a href="/categories/报告//" class="article-tag-list-link color3">报告</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022-11-25-%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B62%E9%A2%98%E8%A7%A3.html" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019-12-15-%E6%96%87%E5%8C%96%E8%AF%BE%E7%AC%94%E8%AE%B0.html" class="archive-article-date">
-        <time datetime="2019-12-14T17:26:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-15</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2022-11-18-test.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">test</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019-12-15-%E6%96%87%E5%8C%96%E8%AF%BE%E7%AC%94%E8%AE%B0.html" target="_blank">文化课笔记分享</a>
-  
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">经验</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">文化课</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019-11-22-%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB.html" class="archive-article-date">
-        <time datetime="2019-11-22T10:36:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-22</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019-11-22-%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB.html" target="_blank">实用的网站</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">经验</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
 
 
           </div>
@@ -436,9 +526,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
