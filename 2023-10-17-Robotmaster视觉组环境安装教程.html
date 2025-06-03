@@ -20,28 +20,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="期末考前的倒数第二个周末，我还来学这无关紧要的东西，并且写博客……">
+    <meta name="description" content="写一份笔记以备部署到小电脑，或者是重装系统，顺便给学弟当教程。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="裴蜀定理">
-<meta property="og:url" content="http://example.com/2020-01-03-%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86.html">
+<meta property="og:title" content="Robotmaster视觉组环境安装教程">
+<meta property="og:url" content="http://example.com/2023-10-17-Robotmaster%E8%A7%86%E8%A7%89%E7%BB%84%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html">
 <meta property="og:site_name" content="newsheep">
-<meta property="og:description" content="期末考前的倒数第二个周末，我还来学这无关紧要的东西，并且写博客……">
+<meta property="og:description" content="写一份笔记以备部署到小电脑，或者是重装系统，顺便给学弟当教程。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-01-03T12:39:11.000Z">
-<meta property="article:modified_time" content="2022-11-18T10:41:46.009Z">
+<meta property="article:published_time" content="2023-10-17T08:56:25.000Z">
+<meta property="article:modified_time" content="2025-03-28T12:52:59.989Z">
 <meta property="article:author" content="newsheep">
-<meta property="article:tag" content="数论">
+<meta property="article:tag" content="视觉">
+<meta property="article:tag" content="Robotmaster">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2020-01-03-%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86.html">
+<link rel="canonical" href="http://example.com/2023-10-17-Robotmaster%E8%A7%86%E8%A7%89%E7%BB%84%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2020-01-03-%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86.html","path":"2020-01-03-裴蜀定理.html","title":"裴蜀定理"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023-10-17-Robotmaster%E8%A7%86%E8%A7%89%E7%BB%84%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html","path":"2023-10-17-Robotmaster视觉组环境安装教程.html","title":"Robotmaster视觉组环境安装教程"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>裴蜀定理 | newsheep</title>
+<title>Robotmaster视觉组环境安装教程 | newsheep</title>
   
 
 
@@ -116,7 +117,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A3%B0%E6%98%8E"><span class="nav-number">2.</span> <span class="nav-text">声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E5%AE%B9"><span class="nav-number">3.</span> <span class="nav-text">内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%81%E6%98%8E"><span class="nav-number">4.</span> <span class="nav-text">证明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A8%E8%AE%BA"><span class="nav-number">5.</span> <span class="nav-text">推论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A8%E5%B9%BF"><span class="nav-number">6.</span> <span class="nav-text">推广</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98"><span class="nav-number">7.</span> <span class="nav-text">例题</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">系统安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">软件安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#VScode"><span class="nav-number">2.0.1.</span> <span class="nav-text">VScode</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Git"><span class="nav-number">2.0.1.1.</span> <span class="nav-text">Git</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">2.1.</span> <span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3-error-invalid-command-39-bdist-wheel-39-%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-number">2.1.0.1.</span> <span class="nav-text">解决 error: invalid command &#39;bdist_wheel&#39; 的方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E9%83%A8%E7%BD%B2"><span class="nav-number">2.2.</span> <span class="nav-text">代码部署</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A1%AC%E7%9B%98%E6%89%A9%E5%AE%B9"><span class="nav-number">3.</span> <span class="nav-text">VMware虚拟机硬盘扩容</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -170,7 +171,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020-01-03-%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86.html">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023-10-17-Robotmaster%E8%A7%86%E8%A7%89%E7%BB%84%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -183,12 +184,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="裴蜀定理 | newsheep">
+      <meta itemprop="name" content="Robotmaster视觉组环境安装教程 | newsheep">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          裴蜀定理
+          Robotmaster视觉组环境安装教程
         </h1>
 
         <div class="post-meta-container">
@@ -199,14 +200,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2020-01-03 20:39:11" itemprop="dateCreated datePublished" datetime="2020-01-03T20:39:11+08:00">2020-01-03</time>
+      <time title="创建时间：2023-10-17 16:56:25" itemprop="dateCreated datePublished" datetime="2023-10-17T16:56:25+08:00">2023-10-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-11-18 18:41:46" itemprop="dateModified" datetime="2022-11-18T18:41:46+08:00">2022-11-18</time>
+      <time title="修改时间：2025-03-28 20:52:59" itemprop="dateModified" datetime="2025-03-28T20:52:59+08:00">2025-03-28</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -228,30 +229,41 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>期末考前的倒数第二个周末，我还来学这无关紧要的东西，并且写博客……</p>
+        <p>写一份笔记以备部署到小电脑，或者是重装系统，顺便给学弟当教程。</p>
 <span id="more"></span>
 
-<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>裴蜀定理 $(Bézout’s identity)$ 又叫贝祖定理，不得不说，音译真是神（mo）奇（gui）。</p>
-<p>还有一个有趣的东西，证明裴蜀定理的并不是裴蜀。</p>
-<h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><p>$a$ 除以 $b$ 和 $a$ 除 $b$是不同的，前者对应 $a \div b，$后者对应 $b \div a$ 。</p>
-<p>符号$“|”$表示$“$能整除$”，a|b$ 表示 $a$ 能整除 $b，$即 $b$ 是 $a$ 的倍数。</p>
-<h3 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h3><p>$ax+by&#x3D;c(x\in N^+, y \in N^+ ) \Leftrightarrow gcd(a,b)|c$</p>
-<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><blockquote>
-<p>感觉不是很严谨</p>
-</blockquote>
-<p>设 $d&#x3D;gcd(a,b)$，则 $d|a$， $d|b$</p>
-<p>$\because x,y \in N^+$</p>
-<p>$\therefore d|ax，d|by$</p>
-<p>若 $ax+by&#x3D;c$ 成立，则 $c$ 是 $(a,b)$ 的公约数的倍数</p>
-<p>$\because x,y \in N^+$</p>
-<p>$\therefore gcd(a,b)|c$</p>
-<h3 id="推论"><a href="#推论" class="headerlink" title="推论"></a>推论</h3><p>$a,b$ 互质 $\Leftrightarrow$ 存在整数 $x,y$，使得 $ax+by&#x3D;1$</p>
-<h3 id="推广"><a href="#推广" class="headerlink" title="推广"></a>推广</h3><blockquote>
-<p>n个整数间的裴蜀定理及推论</p>
-</blockquote>
-<p>设 $a_1,\ldots a_n$ 共 $n$ 个整数，$d$ 是它们的最大公约数，那么存在整数 $x_1,\ldots x_n$ 使得 $a_1x_1+\ldots +a_nx_n&#x3D;d$</p>
-<p>如果 $a_1,a_2,\ldots a_n$ 互质，那么存在整数 $x_1,\ldots x_n$ 使得 $a_1x_1+\ldots +a_nx_n&#x3D;1$</p>
-<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4549">P4549 【模板】裴蜀定理</a></p>
+<h1 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h1><p><a target="_blank" rel="noopener" href="https://www.releases.ubuntu.com/focal/">Linux Ubuntu 20.04</a></p>
+<h1 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h1><h3 id="VScode"><a href="#VScode" class="headerlink" title="VScode"></a>VScode</h3><p>01.依赖软件安装<br><code>sudo apt install software-properties-common apt-transport-https wget</code></p>
+<p>02.使用 wget 命令插入 Microsoft GPG key ：<br><code>wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -</code></p>
+<p>03.启用 Visual Studio Code 源仓库，输入：<br><code>sudo add-apt-repository &quot;deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main&quot;</code></p>
+<p>04.一旦 apt 软件源被启用，安装 Visual Studio Code 软件包：<br><code>sudo apt install code</code></p>
+<h4 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h4><p>01.软件安装</p>
+<p><code>sudo apt install git</code></p>
+<p>02.用github上注册的用户名和邮箱地址，配置git</p>
+<p><code>git config  --global user.name &quot;username&quot;</code><br><code>git config  --global user.email &quot;username@email.com&quot;</code></p>
+<p>03.重启ubuntu，并查看git是否配置成功</p>
+<p><code>sudo git config --global --list</code></p>
+<pre><code>如果没有重启，查看git是否配置成功可能报错：
+</code></pre>
+<p><code>fatal: 无法读取配置文件 &#39;/root/.gitconfig&#39;: 没有那个文件或目录</code></p>
+<p>04.生成密钥</p>
+<p>生成 ssh 密钥，ed25519 也可以用 rsa，只是代表两种不同算法生成的密钥</p>
+<p><code>ssh-keygen -t ed25519 -C &quot;username@email.com&quot;</code></p>
+<p>response 如下，设置私钥的文件名（产生一个私钥，和一个同名的.pub结尾公钥）和通行短语。不设置可以回车跳过</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Enter file in which to save the key (/home/icenter/.ssh/id_ed25519):</span><br><span class="line">Enter passphrase (empty for no passphrase):</span><br><span class="line">Enter same passphrase again:</span><br></pre></td></tr></table></figure>
+
+<p>使用cat命令查看生成的pub密钥</p>
+<p><code>cat /home/username/.ssh/id_ed25519.pub</code></p>
+<p>此处为Ubuntu用户名，不是GitHub用户名</p>
+<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p><a target="_blank" rel="noopener" href="https://docs.openvino.ai/2022.3/openvino_docs_install_guides_install_dev_tools.html#install-dev-tools">OpenVINO</a></p>
+<h4 id="解决-error-invalid-command-39-bdist-wheel-39-的方法"><a href="#解决-error-invalid-command-39-bdist-wheel-39-的方法" class="headerlink" title="解决 error: invalid command &#39;bdist_wheel&#39; 的方法"></a>解决 <code>error: invalid command &#39;bdist_wheel&#39; </code>的方法</h4><p>先临时换源升级pip <code>python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip</code></p>
+<p>再永久换源 <code>pip config set global.index-url https://pypi.tuna. tsinghua.edu.cn/simple</code></p>
+<p><a target="_blank" rel="noopener" href="https://deepinout.com/python/python-qa/935_python_how_to_fix_error_invalid_command_bdist_wheel.html">参考链接</a></p>
+<h2 id="代码部署"><a href="#代码部署" class="headerlink" title="代码部署"></a>代码部署</h2><p>部署加州伯克利开源自瞄</p>
+<p><code>sudo git clone https://github.com/buoyancy99/robotmaster-fast-detect.git</code></p>
+<p><code>sudo git clone git@github.com:buoyancy99/robotmaster-fast-detect.git</code></p>
+<p>两种方式，不行就换一种</p>
+<h1 id="VMware虚拟机硬盘扩容"><a href="#VMware虚拟机硬盘扩容" class="headerlink" title="VMware虚拟机硬盘扩容"></a>VMware虚拟机硬盘扩容</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/ZHJ123CSDN/article/details/105962016">https://blog.csdn.net/ZHJ123CSDN/article/details/105962016</a></p>
 
     </div>
 
@@ -269,7 +281,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://example.com/2020-01-03-%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86.html" title="裴蜀定理">http://example.com/2020-01-03-裴蜀定理.html</a>
+      <a href="http://example.com/2023-10-17-Robotmaster%E8%A7%86%E8%A7%89%E7%BB%84%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html" title="Robotmaster视觉组环境安装教程">http://example.com/2023-10-17-Robotmaster视觉组环境安装教程.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -278,21 +290,19 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/%E6%95%B0%E8%AE%BA/" rel="tag"># 数论</a>
+              <a href="/tags/%E8%A7%86%E8%A7%89/" rel="tag"># 视觉</a>
+              <a href="/tags/Robotmaster/" rel="tag"># Robotmaster</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2019-12-21-%E5%BC%82%E6%88%96.html" rel="prev" title="异或是个神奇的运算">
-                  <i class="fa fa-chevron-left"></i> 异或是个神奇的运算
+                <a href="/2022-11-25-%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B62%E9%A2%98%E8%A7%A3.html" rel="prev" title="牛客小白月赛62题解">
+                  <i class="fa fa-chevron-left"></i> 牛客小白月赛62题解
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022-11-25-%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B62%E9%A2%98%E8%A7%A3.html" rel="next" title="牛客小白月赛62题解">
-                  牛客小白月赛62题解 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
